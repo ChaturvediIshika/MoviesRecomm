@@ -1,6 +1,6 @@
 let result=document.getElementById('main')
 async function searchDb(searchText){
-    const res=await fetch(`http://localhost:3000/search?q=${searchText}`);
+    const res=await fetch(`/search?q=${searchText}`);
     const movies=await res.json();
     console.log(movies);
     movies.forEach(ele=>{

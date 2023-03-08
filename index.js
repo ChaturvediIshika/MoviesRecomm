@@ -19,6 +19,7 @@ app.get('/',(req,res)=>{
 })
 
 // console.log(Movie.find());
+Movie.create({name:'ironman',year:2020,rating:2.4,isWatched:true});
 
 app.get('/search',async(req,res)=>{
     const {q}=req.query;
