@@ -4,7 +4,7 @@ const path=require('path');
 const mongoose=require('mongoose');
 const Movie=require("./movie");
 
-mongoose.connect('mongodb://127.0.0.1:27017/movieApp').then(()=>{
+mongoose.connect('mongodb+srv://cishika104:doraemon1234@cluster0.khhhxjh.mongodb.net/movieApp').then(()=>{
     console.log("OK");
 }).catch((err)=>{
     console.log(err);
